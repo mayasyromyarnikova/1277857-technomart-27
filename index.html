@@ -6,8 +6,12 @@
   </head>
   <body>
     <header>
-      <img src="img/logo/logo_Technomart.png" width="109" height="19" alt="Логотип Техномарт">
-          <!-- форма поиска-->
+      <p class="visually-hidden">ТЕХНОМАРТ</p>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <label for="search-field">Поиск:</label>
+        <input type="search" name="search" id="search-field">
+        <button type="button"></button>
+      </form>
         <ul>
           <li><a href="#">Закладки:</a></li>
           <li><a href="#">Корзина</a></li>
@@ -38,9 +42,9 @@
       </nav>
     </header>
     <main>
-      <h1>Техномарт</h1>
+      <h1 class="visually-hidden">Техномарт</h1>
       <section>
-        <h2>Промо-блок</h2>
+        <h2 class="visually-hidden">Промо-блок</h2>
           <ul>
             <li>
                 <b>Материалы</b>
@@ -65,7 +69,7 @@
             </li>
          </ul>
           <div>
-            <h3>Слайдер</h3>
+            <h3 class="visually-hidden">Слайдер</h3>
               <button type="button">&lt;</button>
               <button type="button">&gt;</button>
               <a href="catalog.html">Открыть каталог</a>
@@ -86,28 +90,28 @@
         <a href="#">Все популярные товары</a>
         <ul>
           <li>
-            <img src="img/products/perforator_9000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 9000">
+            <img src="img/products/perforator_9000.jpg" width="218" height="170" alt="#">
             <b>Перфоратор BOSCH<br>
                BFG 9000</b>
             <b>32500 р.</b>
             <b><a href="#">25500 р.</a></b>
           </li>
           <li>
-            <img src="img/products/perforator_3000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
+            <img src="img/products/perforator_3000.jpg" width="218" height="170" alt="#">
             <b>Перфоратор BOSCH<br>
                BFG 3000</b>
             <b>22500 р.</b>
             <b><a href="#">15500 р.</a></b>
           </li>
           <li>
-            <img src="img/products/perforator_6000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
+            <img src="img/products/perforator_6000.jpg" width="218" height="170" alt="#">
             <b>Перфоратор BOSCH<br>
                BFG 6000</b>
             <b>30500 р.</b>
             <b><a href="#">25500 р.</a></b>
           </li>
           <li>
-            <img src="img/products/perforator_2000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
+            <img src="img/products/perforator_2000.jpg" width="218" height="170" alt="#">
             <p>new</p>
             <b>Перфоратор BOSCH BFG 2000</b>
             <b><a href="#">12500 р.</a></b>
@@ -193,20 +197,34 @@
           <button type="button">Заблудились? Напишите нам!</button>
         </section>
         <section>
-          <h2>Обратная связь</h2>
-            <button type="button">x</button>
-            <p>Ваше имя:</p>
-            <p>Ваш e-mail:</p>
-            <p>Текст письма:</p>
-          <button type="button">Отправить</button>
+          <h2 class="visually-hidden">Напишите нам</h2>
+            <form class="" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label for="user-name">Ваше имя:</label><br>
+                <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="user-email">Ваш email:</label><br>
+                <input type="email" name="email" id="user-email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="user-mail">Текст письма:</label><br>
+                <textarea name="mail" rows="5" id="user-mail">В свободной форме</textarea>
+              </p>
+              <button type="submit">Отправить</button>
+            </form>
+          <button type="button" class="visually-hidden">Закрыть</button>
         </section>
         <section>
-          <h2>Карта</h2>
-          <button type="button">x</button>
+          <h2 class="visually-hidden">Карта</h2>
+          <p>
+            <img src="img/map_big.png" width="940" height="446" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          </p>
+          <button type="button" class="visually-hidden">Закрыть</button>
         </section>
     </main>
     <footer>
-      <img src="img/logo/logo_Technomart.png" width="138" height="23" alt="Логотип Техномарт">
+      <p class="visually-hidden">Техномарт</p>
       <p>
          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
          +7 (812) 555-05-55
@@ -229,9 +247,9 @@
         Все права защищены
       </p>
       <ul>
-        <li><a href="#">ВКонтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li class="visually-hidden"><a href="#">ВКонтакте</a></li>
+        <li class="visually-hidden"><a href="#">Фейсбук</a></li>
+        <li class="visually-hidden"><a href="#">Инстаграм</a></li>
       </ul>
       <p>
          <span>Обратная связь:</span>
