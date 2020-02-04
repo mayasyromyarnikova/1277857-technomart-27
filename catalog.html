@@ -10,7 +10,6 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <label for="search-field">
         <input type="search" name="search" id="search-field" placeholder="Поиск:">
-        <button type="submit"></button>
         </label>
       </form>
         <ul>
@@ -55,20 +54,55 @@
         <li><a href="#">Инструмент</a></li>
         <li><a href="#">Перфораторы</a></li>
       </ul>
-      <ul>
-        <li>Фильтр:</li>
-        <li>Сортировка:</li>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <h3>Сортировка:</h3>
           <ul>
-            <li><button type="button">По цене</button></li>
-            <li><button type="button">По типу</button></li>
-            <li><button type="button">По функционалу</button></li>
-            <li><button type="button">По возрастанию</button></li>
-            <li><button type="button">По убыванию</button></li>
+            <li>
+              <button type="submit">
+                <input type="radio" name="sort-1" value="price" id="filter-price">
+                <label for="filter-price">По цене</label>
+              </button>
+            </li>
+            <li>
+              <button type="submit">
+                <input type="radio" name="sort-1" value="type" id="filter-type">
+                <label for="filter-type">По типу</label>
+              </button>
+            </li>
+            <li>
+              <button type="submit">
+                <input type="radio" name="sort-1" value="functional" id="filter-functional">
+                <label for="filter-functional">По функционалу</label>
+              </button>
+            </li>
           </ul>
-      </ul>
+      </form>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <ul>
+          <li>
+            <button type="submit">
+              <input type="radio" name="sort-2" value="ascending" id="filter-ascending">
+              <label for="filter-ascending">По возрастанию</label>
+            </button>
+          </li>
+          <li>
+            <button type="submit">
+              <input type="radio" name="sort-2" value="descending" id="filter-descending">
+              <label for="filter-descending">По убыванию</label>
+            </button>
+          </li>
+        </ul>
+      </form>
+
       <section>
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <h3>Фильтр:</h3>
+        <form action="https://echo.htmlacademy.ru" method="post" oninput="filter-min-result.value=filter-left-range.value" oninput="filter-max-result.value=filter-right-range.value">
+          <label for="filter-left-range">Цена:</label>
+          <input type="range" min="0" max="30000" step="1" id="filter-left-range" value="0">
+          <label for="filter-right-range">
+            <input type="range" min="0" max="30000" step="1" id="filter-right-range" value="30000">
+          </label>
+          <p><span>0</span>–<span>30000</span></p>
           <fieldset>
             <legend>Производители:</legend>
               <ul>
@@ -98,11 +132,11 @@
             <legend>Питание:</legend>
             <ul>
               <li>
-                <input type="radio" name="power" id="battery" checked>
+                <input type="radio" name="power" value="battery" id="battery" checked>
                 <label for="battery">Аккумуляторные</label>
               </li>
               <li>
-                <input type="radio" name="power" id="network">
+                <input type="radio" name="power" value="network" id="network">
                 <label for="network">Сетевые</label>
               </li>
             </ul>
@@ -147,8 +181,8 @@
           <b><a href="#">25500 р.</a></b>
         </li>
         <li>
+          <img src="img/new_flag.png" width="60" height="59" alt="Новинка">
           <img src="img/products/perforator_2000.jpg" width="218" height="170" alt="#">
-          <p>new</p>
           <b>Перфоратор BOSCH BFG 2000</b>
           <b><a href="#">12500 р.</a></b>
         </li>
