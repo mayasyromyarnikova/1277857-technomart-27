@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #ee3643;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-header {
+  background-color: #f4f7f9;
+  font-size: 17px;
+}
+
+.header-up {
+    background-color: #293449;
+    color: white;
+}
+
+.preferences,
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.preferences a,
+.site-navigation a {
+  color: white;
+}
+
+.preferences li:last-child {
+  background-color: #63a63e;
+}
+
+.search input {
+  background-color: #293449;
+  border-width: 0;
+}
+
+.search input::placeholder {
+  color: white;
+}
+
+.description {
+  color: #ee3643;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.address {
+  color: #32425c;
+  font-size: 14px;
+  text-align: center;
+}
+
+.address a {
+  color: #ee3643;
+  font-size: 21px;
+  border: 3px solid white;
+}
+
+.user-navigation {
+  background-color: white;
+  font-size: 21px;
+}
+
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation {
+  background-color: #293449;
+}
+
+.promo a {
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.promo li {
+  list-style: none;
+  color: white;
+  font-size: 24px;
+}
+
+.promo li:first-child {
+  background-color: #ffbf47;
+}
+
+.promo li:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.promo li:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.promo li:nth-child(4){
+  background-color: #8ed78f;
+}
+
+.promo li:last-child {
+  background-color: #ffc047;
+}
+
+.button-promo {
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.slider {
+  background-color: #cccccc;
+  font-size: 18px;
+  color: white;
+}
+
+.slider b {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main-section h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f9f5f0;
+}
+
+.main-section li {
+  list-style: none;
+}
+
+.products-item {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.products-item b:nth-of-type(2) {
+  font-size: 17px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.button-product {
+  background-color: #ee3643;
+  font-size: 17px;
+}
+
+.button-product a {
+  color: white;
+}
+
+.manufacturers-item {
+  border: 1px solid #eaeaea;
+}
+
+/* шрифты
+font-family: 'Cuprum', sans-serif;
+font-family: 'PT Sans', sans-serif;
+*/
