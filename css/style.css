@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 13px;
+  line-height: 24px;
+  color: black;
 }
 
 a {
@@ -15,6 +17,7 @@ a {
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
+  border-radius: 2px;
 }
 
 .main-header {
@@ -25,6 +28,15 @@ a {
 .header-up {
     background-color: #293449;
     color: white;
+}
+
+.logo {
+  background-color: #ee3643;
+  box-shadow: 0 -3px 0 0 #b52933 inset;
+}
+
+.main-footer .logo {
+  box-shadow: 0 -5px 0 0 #b52933 inset;
 }
 
 .preferences,
@@ -47,7 +59,19 @@ a {
   border-width: 0;
 }
 
-.search input::placeholder {
+input[type="search"]::-webkit-input-placeholder {
+  color: white;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  color: white;
+}
+
+input[type="search"]::-ms-input-placeholder {
+  color: white;
+}
+
+input[type="search"]::placeholder {
   color: white;
 }
 
@@ -79,7 +103,17 @@ a {
 }
 
 .site-navigation {
-  background-color: #293449;
+  background-color: #32425c;
+  box-shadow: 0 -3px 0 0 #293449 inset;
+}
+
+.account li {
+  list-style: none;
+}
+
+.account a {
+  font-size: 16px;
+  color: #32425c;
 }
 
 .promo a {
@@ -162,9 +196,115 @@ a {
   color: white;
 }
 
-.manufacturers-item {
+.brands-item {
   border: 1px solid #eaeaea;
 }
+
+.service {
+  background-color: #f4f8fa;
+}
+
+.about-company h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.about-company h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.service li {
+  list-style: none;
+}
+
+.service-button {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  background-color: #32425c;
+  color: white;
+  border-width: 0;
+}
+
+.about-company li {
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-company span {
+  font-weight: bold;
+  color: #ee3643;
+}
+
+.modal,
+.map {
+  display: none;
+}
+
+.footer-up {
+  background-color: #32425c;
+}
+
+.footer-down {
+  background-color: #293449;
+}
+
+.main-footer p,
+.main-footer a {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-footer li {
+  list-style: none;
+}
+
+.catalog-navigation a {
+  color: #ffd180;
+}
+
+.footer-down p,
+.footer-down a {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.development button,
+.development a {
+  color: #ffd180;
+}
+
+.development button {
+  background-color: #293449;
+  border-width: 0;
+}
+
+.breadcrumbs li {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.catalog h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+
 
 /* шрифты
 font-family: 'Cuprum', sans-serif;
