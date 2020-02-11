@@ -43,6 +43,16 @@ a {
   box-shadow: 0 -3px 0 0 #b52933 inset;
 }
 
+.logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 -3px 0 0 #9a212a inset;
+}
+
+.logo:active {
+  background-color: #ba2732;
+  box-shadow: 0 -3px 0 0 #8e1e26 inset;
+}
+
 .main-footer .logo {
   box-shadow: 0 -5px 0 0 #b52933 inset;
 }
