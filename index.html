@@ -107,18 +107,29 @@
 
           <div class="slider">
             <h3 class="visually-hidden">Слайдер</h3>
-            <button class="left" type="button"></button>
-            <button class="right" type="button"></button>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-            <div class="slider-content">
-              <b>Перфораторы</b>
-              <p>Настоящие мужские игрушки</p>
+            <input class="visually-hidden" type="radio" id="product1" name="toggle1" checked>
+            <input class="visually-hidden" type="radio" id="product2" name="toggle1">
+            <button class="back" type="button" disabled></button>
+            <button class="next" type="button"></button>
+
+            <div class="slider-controls">
+              <label for="product1">Первый</label>
+              <label for="product2">Второй</label>
             </div>
-            <div class="slider-content">
-              <b>Дрели</b>
-              <p>Соседям на радость!</p>
-            </div>
+            <ul class="slider-list">
+              <li class="slider-content" id="slide1">
+                <b>Перфораторы</b>
+                <p>Настоящие мужские игрушки</p>
+                <a class="button" href="catalog.html">Открыть каталог</a>
+              </li>
+              <li class="slider-content" id="slide2">
+                <b>Дрели</b>
+                <p>Соседям на радость!</p>
+                <a class="button" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
           </div>
+
         </section>
 
 
@@ -130,6 +141,10 @@
           </div>
           <ul class="popular">
             <li class="product-item">
+              <div class="action">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="product-item-image">
                 <img src="img/products/perforator_9000.jpg" width="218" height="170" alt="#">
               </div>
@@ -139,6 +154,10 @@
               <a class="button-product" href="#">25500 р.</a>
             </li>
             <li class="product-item">
+              <div class="action">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <p class="product-item-image">
                 <img src="img/products/perforator_3000.jpg" width="218" height="170" alt="#">
               </p>
@@ -148,6 +167,10 @@
               <a class="button-product" href="#">15500 р.</a>
             </li>
             <li class="product-item">
+              <div class="action">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <p class="product-item-image">
                 <img src="img/products/perforator_6000.jpg" width="218" height="170" alt="#">
               </p>
@@ -157,6 +180,10 @@
               <a class="button-product" href="#">25500 р.</a>
             </li>
             <li class="product-item">
+              <div class="action">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="img-new">
                 <img src="img/new_flag.png" width="60" height="59" alt="Новинка">
               </div>
@@ -195,43 +222,45 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
           <div class="service-row">
-            <ul class="service-option">
-              <li><button class="service-button" type="button">Доставка</button></li>
-              <li><button class="service-button" type="button">Гарантия</button></li>
-              <li><button class="service-button" type="button">Кредит</button></li>
+            <input class="visually-hidden" type="radio" id="service-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="service-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="service-3" name="toggle">
+            <div class="service-option">
+              <label class="service-button" for="service-1">Доставка</label>
+              <label class="service-button" for="service-2">Гарантия</label>
+              <label class="service-button" for="service-3">Кредит</label>
+            </div>
+
+            <ul class="service-list">
+              <li class="service-item" id="service-slide-1">
+                <h3 class="service-delivery">Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li class="service-item" id="service-slide-2">
+                <h3 class="service-guarantee">Гарантия</h3>
+                <p>
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгоранием,<br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                  сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="service-item" id="service-slide-3">
+                <h3 class="service-credit">Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="button" href="#">Отправить заявку</a>
+              </li>
             </ul>
 
-            <div class="service-item">
-              <h3 class="service-delivery">Доставка</h3>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно!<br>
-                Ведь мы неплохо заработаем,<br>
-                поднимая его на ваш этаж!
-              </p>
-            </div>
-
-
-  <!--          <div class="service-item">
-              <h3 class="service-guarantee">Гарантия</h3>
-              <p>
-                Если купленный у нас товар поломается или заискрит,<br>
-                а также в случае пожара, спровоцированного его возгоранием,<br>
-                вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-                сгоревший товар на новый.<br>
-                Дом уж восстановите как-нибудь сами.
-              </p>
-            </div>
-
-            <div class="service-item">
-              <h3 class="service-credit">Кредит</h3>
-              <p>
-                Залезть в долговую яму стало проще!<br>
-                Кредитные консультанты придут вам на помощь.
-              </p>
-              <a class="button" href="#">Отправить заявку</a>
-            </div>
--->
           </div>
         </div>
       </section>
@@ -273,9 +302,7 @@
       <div class="footer-up">
         <div class="container-row">
           <div class="footer-logo">
-            <div class="logo">
-              <img src="img/logo/logo_Technomart.png" width="136" height="21" alt="Логотип Техномарт">
-            </div>
+            <img src="img/logo/logo_Technomart.png" width="136" height="21" alt="Логотип Техномарт">
           </div>
           <ul class="company-navigation">
             <li><a href="#">Компания</a></li>
