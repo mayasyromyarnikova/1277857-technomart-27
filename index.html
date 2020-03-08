@@ -26,8 +26,8 @@
                   </label>
               </form>
               <ul class="preferences">
-                <li><a href="#">Закладки: 0</a></li>
-                <li><a href="#">Корзина: 0</a></li>
+                <li class="bookmark"><a href="#">Закладки: 0</a></li>
+                <li class="basket"><a href="#">Корзина: 0</a></li>
                 <li><a class="arrange-order" href="#">Оформить заказ</a></li>
               </ul>
             </div>
@@ -42,7 +42,7 @@
             и инструментов для ремонта
           </p>
           <p class="address">
-            <a class="telefon" href="#">+7 (812) 555-05-55</a>
+            <a class="telefon" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<span>
           </p>
           <ul class="user-navigation">
@@ -150,8 +150,10 @@
               </div>
               <b>Перфоратор BOSCH
                 BFG 9000</b>
-              <b class="line-through">32500 р.</b>
-              <a class="button-product" href="#">25500 р.</a>
+              <div class="price">
+                <b class="line-through">32500 р.</b>
+                <a class="button-product" href="#">25500 р.</a>
+              </div>
             </li>
             <li class="product-item">
               <div class="action">
@@ -163,8 +165,10 @@
               </p>
               <b>Перфоратор BOSCH
                 BFG 3000</b>
-              <b class="line-through">22500 р.</b>
-              <a class="button-product" href="#">15500 р.</a>
+              <div class="price">
+                <b class="line-through">22500 р.</b>
+                <a class="button-product" href="#">15500 р.</a>
+              </div>
             </li>
             <li class="product-item">
               <div class="action">
@@ -176,23 +180,26 @@
               </p>
               <b>Перфоратор BOSCH
                 BFG 6000</b>
-              <b class="line-through">30500 р.</b>
-              <a class="button-product" href="#">25500 р.</a>
+              <div class="price">
+                <b class="line-through">30500 р.</b>
+                <a class="button-product" href="#">25500 р.</a>
+              </div>
             </li>
             <li class="product-item">
               <div class="action">
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="img-new">
-                <img src="img/new_flag.png" width="60" height="59" alt="Новинка">
-              </div>
               <p class="product-item-image">
                 <img src="img/products/perforator_2000.jpg" width="218" height="170" alt="#">
               </p>
+              <div class="img-new">
+              </div>
               <b>Перфоратор BOSCH
                 BFG 2000</b>
-              <a class="button-product" href="#">12500 р.</a>
+              <div class="price">
+                <a class="button-product" href="#">12500 р.</a>
+              </div>
             </li>
           </ul>
         </section>
@@ -332,17 +339,17 @@
             Все права защищены
           </p>
           <ul class="social">
-            <li class="social-icon">
+            <li class="social-icon social-vk">
               <a href="#">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
-            <li class="social-icon">
+            <li class="social-icon social-fb">
               <a href="#">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="social-icon">
+            <li class="social-icon social-inst">
               <a href="#">
                 <span class="visually-hidden">Инстаграм</sapn>
               </a>
