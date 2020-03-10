@@ -1601,7 +1601,6 @@ input[type="search"]::placeholder {
 }
 
 .sort2,
-.sort3,
 .sort4 {
   display: flex;
   margin: 0;

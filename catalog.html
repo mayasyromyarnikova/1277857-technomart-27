@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт. Каталог</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -111,7 +112,7 @@
           <div class="filter-head">
             <h3>Фильтр:</h3>
           </div>
-          <form class="filter" action="https://echo.htmlacademy.ru" method="post" oninput="filter-min-result.value=filter-left-range.value" oninput="filter-max-result.value=filter-right-range.value">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
             <legend class="filter-name">Цена:</legend>
             <div class="range-filter">
@@ -186,54 +187,42 @@
             <form action="https://echo.htmlacademy.ru" method="post">
               <ul class="sort2">
                 <li class="sort2-item">
-                  <button type="submit">
-                    <input class="visually-hidden" type="radio" name="sort-1" value="price" id="filter-price" checked>
-                    <label for="filter-price">По цене</label>
-                  </button>
+                  <input class="visually-hidden" type="radio" name="sort-1" value="price" id="filter-price" checked>
+                  <label for="filter-price">По цене</label>
                 </li>
                 <li class="sort2-item">
-                  <button type="submit">
-                    <input class="visually-hidden" type="radio" name="sort-1" value="type" id="filter-type">
-                    <label for="filter-type">По типу</label>
-                  </button>
+                  <input class="visually-hidden" type="radio" name="sort-1" value="type" id="filter-type">
+                  <label for="filter-type">По типу</label>
                 </li>
                 <li class="sort2-item">
-                  <button type="submit">
-                    <input class="visually-hidden" type="radio" name="sort-1" value="functional" id="filter-functional">
-                    <label for="filter-functional">По функционалу</label>
-                  </button>
+                  <input class="visually-hidden" type="radio" name="sort-1" value="functional" id="filter-functional">
+                  <label for="filter-functional">По функционалу</label>
                 </li>
               </ul>
             </form>
-            <div class="sort3">
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <ul class="sort4">
-                  <li>
-                    <button class="ascending" type="submit">
-                      <input class="visually-hidden" type="radio" name="sort-2" value="ascending" id="filter-ascending" checked>
-                      <label for="filter-ascending">
-                        <span class="visually-hidden">По возрастанию</span>
-                      </label>
-                      <svg class="ascending-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                        <path fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
-                      </svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="descending" type="submit">
-                      <input class="visually-hidden" type="radio" name="sort-2" value="descending" id="filter-descending">
-                      <label  for="filter-descending">
-                        <span class="visually-hidden">По убыванию</span>
-                      </label>
-                      <svg class="descending-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                       width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                       <polyline fill="#c5c5c5" points="5.5,10 0,0 11,0 "/>
-                      </svg>
-                    </button>
-                  </li>
-                </ul>
-              </form>
-            </div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <ul class="sort4">
+                <li>
+                  <input class="visually-hidden" type="radio" name="sort-2" value="ascending" id="filter-ascending" checked>
+                  <label for="filter-ascending">
+                    <span class="visually-hidden">По возрастанию</span>
+                  </label>
+                  <svg class="ascending-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="radio" name="sort-2" value="descending" id="filter-descending" >
+                  <label  for="filter-descending">
+                    <span class="visually-hidden">По убыванию</span>
+                  </label>
+                  <svg class="descending-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                   <polyline fill="#c5c5c5" points="5.5,10 0,0 11,0 "/>
+                  </svg>
+                </li>
+              </ul>
+            </form>
           </div>
 
           <ul class="catalog-item">
@@ -440,7 +429,7 @@
             </li>
             <li class="social-icon social-inst">
               <a href="#">
-                <span class="visually-hidden">Инстаграм</sapn>
+                <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
           </ul>
