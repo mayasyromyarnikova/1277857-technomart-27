@@ -26,8 +26,8 @@
                   </label>
               </form>
               <ul class="preferences">
-                <li><a href="#">Закладки: 0</a></li>
-                <li><a href="#">Корзина: 0</a></li>
+                <li class="bookmark"><a href="#">Закладки: 0</a></li>
+                <li class="basket"><a href="#">Корзина: 0</a></li>
                 <li><a class="arrange-order" href="#">Оформить заказ</a></li>
                 <li><a href="#">Закладки: 0</a></li>
                 <li><a href="#">Корзина: 0</a></li>
@@ -44,25 +44,24 @@
           и инструментов для ремонта
         </p>
         <p class="address">
-          <a class="telefon" href="#">+7 (812) 555-05-55</a>
+          <a class="telefon" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<span>
         </p>
         <ul class="user-navigation">
           <li>
             <a class="login-button" href="#">Войти</a>
             <svg class="login" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+	             width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
               <g>
-                 <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
+	                <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
               </g>
               <path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
-                v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+	               v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
             </svg>
           </li>
           <li><a href="#">Регистрация</a></li>
         </ul>
       </div>
-
 
       <nav class="container">
         <ul class="site-navigation">
@@ -109,18 +108,29 @@
 
           <div class="slider">
             <h3 class="visually-hidden">Слайдер</h3>
-            <button class="left" type="button"></button>
-            <button class="right" type="button"></button>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-            <div class="slider-content">
-              <b>Перфораторы</b>
-              <p>Настоящие мужские игрушки</p>
+            <input class="visually-hidden" type="radio" id="product1" name="toggle1" checked>
+            <input class="visually-hidden" type="radio" id="product2" name="toggle1">
+            <button class="back" type="button" disabled></button>
+            <button class="next" type="button"></button>
+
+            <div class="slider-controls">
+              <label for="product1">Первый</label>
+              <label for="product2">Второй</label>
             </div>
-            <div class="slider-content">
-              <b>Дрели</b>
-              <p>Соседям на радость!</p>
-            </div>
+            <ul class="slider-list">
+              <li class="slider-content" id="slide1">
+                <b>Перфораторы</b>
+                <p>Настоящие мужские игрушки</p>
+                <a class="button" href="catalog.html">Открыть каталог</a>
+              </li>
+              <li class="slider-content" id="slide2">
+                <b>Дрели</b>
+                <p>Соседям на радость!</p>
+                <a class="button" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
           </div>
+
         </section>
 
 
@@ -132,42 +142,65 @@
           </div>
           <ul class="popular">
             <li class="product-item">
+              <div class="action">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="product-item-image">
                 <img src="img/products/perforator_9000.jpg" width="218" height="170" alt="#">
               </div>
               <b>Перфоратор BOSCH
                 BFG 9000</b>
-              <b class="line-through">32500 р.</b>
-              <a class="button-product" href="#">25500 р.</a>
+              <div class="price">
+                <b class="line-through">32500 р.</b>
+                <a class="button-product" href="#">25500 р.</a>
+              </div>
             </li>
             <li class="product-item">
+              <div class="action">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <p class="product-item-image">
                 <img src="img/products/perforator_3000.jpg" width="218" height="170" alt="#">
               </p>
               <b>Перфоратор BOSCH
                 BFG 3000</b>
-              <b class="line-through">22500 р.</b>
-              <a class="button-product" href="#">15500 р.</a>
+              <div class="price">
+                <b class="line-through">22500 р.</b>
+                <a class="button-product" href="#">15500 р.</a>
+              </div>
             </li>
             <li class="product-item">
+              <div class="action">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <p class="product-item-image">
                 <img src="img/products/perforator_6000.jpg" width="218" height="170" alt="#">
               </p>
               <b>Перфоратор BOSCH
                 BFG 6000</b>
-              <b class="line-through">30500 р.</b>
-              <a class="button-product" href="#">25500 р.</a>
+              <div class="price">
+                <b class="line-through">30500 р.</b>
+                <a class="button-product" href="#">25500 р.</a>
+              </div>
             </li>
             <li class="product-item">
-              <div class="img-new">
-                <img src="img/new_flag.png" width="60" height="59" alt="Новинка">
+              <div class="action">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
               <p class="product-item-image">
                 <img src="img/products/perforator_2000.jpg" width="218" height="170" alt="#">
               </p>
+              <div class="img-new">
+              </div>
               <b>Перфоратор BOSCH
                 BFG 2000</b>
-              <a class="button-product" href="#">12500 р.</a>
+              <div class="price">
+                <a class="button-product" href="#">12500 р.</a>
+              </div>
             </li>
           </ul>
         </section>
@@ -197,43 +230,45 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
           <div class="service-row">
-            <ul class="service-option">
-              <li><button class="service-button" type="button">Доставка</button></li>
-              <li><button class="service-button" type="button">Гарантия</button></li>
-              <li><button class="service-button" type="button">Кредит</button></li>
+            <input class="visually-hidden" type="radio" id="service-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="service-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="service-3" name="toggle">
+            <div class="service-option">
+              <label class="service-button" for="service-1">Доставка</label>
+              <label class="service-button" for="service-2">Гарантия</label>
+              <label class="service-button" for="service-3">Кредит</label>
+            </div>
+
+            <ul class="service-list">
+              <li class="service-item" id="service-slide-1">
+                <h3 class="service-delivery">Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li class="service-item" id="service-slide-2">
+                <h3 class="service-guarantee">Гарантия</h3>
+                <p>
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгоранием,<br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                  сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="service-item" id="service-slide-3">
+                <h3 class="service-credit">Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="button" href="#">Отправить заявку</a>
+              </li>
             </ul>
 
-            <div class="service-item">
-              <h3 class="service-delivery">Доставка</h3>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно!<br>
-                Ведь мы неплохо заработаем,<br>
-                поднимая его на ваш этаж!
-              </p>
-            </div>
-
-
-  <!--          <div class="service-item">
-              <h3 class="service-guarantee">Гарантия</h3>
-              <p>
-                Если купленный у нас товар поломается или заискрит,<br>
-                а также в случае пожара, спровоцированного его возгоранием,<br>
-                вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-                сгоревший товар на новый.<br>
-                Дом уж восстановите как-нибудь сами.
-              </p>
-            </div>
-
-            <div class="service-item">
-              <h3 class="service-credit">Кредит</h3>
-              <p>
-                Залезть в долговую яму стало проще!<br>
-                Кредитные консультанты придут вам на помощь.
-              </p>
-              <a class="button" href="#">Отправить заявку</a>
-            </div>
--->
           </div>
         </div>
       </section>
@@ -275,9 +310,7 @@
       <div class="footer-up">
         <div class="container-row">
           <div class="footer-logo">
-            <div class="logo">
-              <img src="img/logo/logo_Technomart.png" width="136" height="21" alt="Логотип Техномарт">
-            </div>
+            <img src="img/logo/logo_Technomart.png" width="136" height="21" alt="Логотип Техномарт">
           </div>
           <ul class="company-navigation">
             <li><a href="#">Компания</a></li>
@@ -307,17 +340,17 @@
             Все права защищены
           </p>
           <ul class="social">
-            <li class="social-icon">
+            <li class="social-icon social-vk">
               <a href="#">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
-            <li class="social-icon">
+            <li class="social-icon social-fb">
               <a href="#">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="social-icon">
+            <li class="social-icon social-inst">
               <a href="#">
                 <span class="visually-hidden">Инстаграм</sapn>
               </a>
