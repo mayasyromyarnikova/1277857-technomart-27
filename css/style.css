@@ -1595,8 +1595,27 @@ input[type="search"]::placeholder {
   left: 0;
 }
 
+@keyframes appearence {
+  0% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .modal-show {
   display: block;
+}
+
+.modal-show-form {
+  display: block;
+  animation-name: appearence;
+  animation-duration: 0.6s;
+  animation-fill-mode: backwards;
 }
 
 .breadcrumbs {
