@@ -1233,14 +1233,8 @@ input[type="search"]::placeholder {
   margin: 0;
 }
 
-.contacts p,
-.contacts button {
+.contacts p {
   margin-bottom: 31px;
-}
-
-.contacts button {
-  border: 0;
-  cursor: pointer;
 }
 
 .contacts a {
@@ -1427,19 +1421,13 @@ input[type="search"]::placeholder {
 .modal {
   position: fixed;
   background-color: white;
-  margin: 0;
-/*  display: none;*/
-  z-index: 9;
-}
-
-.aaa {
   box-sizing: border-box;
   width: 620px;
   top: 120px;
   left: 50%;
   margin: 0;
-  margin-left: -310px;
-  background-color: red;
+  display: none;
+  z-index: 9;
 }
 
 .modal-login {
@@ -1458,7 +1446,6 @@ input[type="search"]::placeholder {
   font-size: 18px;
   line-height: 18px;
   z-index: 9;
-  display: none;
 }
 
 .modal-login input,
@@ -1567,12 +1554,16 @@ input[type="search"]::placeholder {
 .modal-map {
   width: 940px;
   height: 446px;
-  position: relative;
   left: 50%;
   margin-left: -470px;
   box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   z-index: 9;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
 }
 
 .modal-map img {
@@ -1602,6 +1593,10 @@ input[type="search"]::placeholder {
   background-image: url("../img/icon/icon-close.svg");
   top: 0;
   left: 0;
+}
+
+.modal-show {
+  display: block;
 }
 
 .breadcrumbs {
@@ -1775,11 +1770,6 @@ input[type="search"]::placeholder {
   top: 14px;
 }
 
-.sort2-item label:hover {
-  color: #000000;
-  text-decoration-style: solid;
-}
-
 .sort2-item label:hover::after {
   content: "";
   width: 100%;
@@ -1788,6 +1778,11 @@ input[type="search"]::placeholder {
   position: absolute;
   left: 0;
   top: 14px;
+}
+
+.sort2-item input:focus + label,
+.sort4 input:focus ~ svg {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 #filter-price:checked ~ label[for="filter-price"],
@@ -1840,14 +1835,6 @@ input[type="search"]::placeholder {
 #filter-ascending:checked ~ .ascending-icon path,
 #filter-descending:checked ~ .descending-icon polyline {
   fill: #ee3643;
-}
-
-.sort2 button,
-.sort4 button {
-  background-color: #f7f3ec;
-  border: 0;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog {
@@ -2045,7 +2032,7 @@ input[type="search"]::placeholder {
 }
 
 input:disabled + label {
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .brands label::before {
@@ -2054,14 +2041,14 @@ input:disabled + label {
   height: 23px;
   background-image: url("../img/icon/icon-checkbox-off.svg");
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.7;
   left: 0;
   top: 0;
 }
 
 .brands label:hover::before,
 .power label:hover::before {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .power label::before {
@@ -2070,7 +2057,7 @@ input:disabled + label {
   height: 25px;
   background-image: url("../img/icon/icon-radio-off.svg");
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.7;
   left: 0;
   top: -2px;
 }
@@ -2087,6 +2074,11 @@ input[type="radio"]:checked + label::before {
   width: 25px;
   height: 25px;
   background-image: url("../img/icon/icon-radio-on.svg");
+}
+
+input[type="checkbox"]:focus + label::before,
+input[type="radio"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .catalog h2 {
