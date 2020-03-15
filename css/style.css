@@ -1597,13 +1597,10 @@ input[type="search"]::placeholder {
 
 @keyframes appearence {
   0% {
-    transform: translateX(50px);
-  }
-  50% {
-    transform: translateX(-150px);
+    transform: translatey(100px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 

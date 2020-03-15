@@ -1,24 +1,22 @@
 var mapOpen = document.querySelector(".map-open");
 var mapPopup = document.querySelector(".modal-map");
-var mapCloses = document.querySelectorAll(".modal-close");
+var mapClose = mapPopup.querySelector(".modal-close");
 
 mapOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mapPopup.classList.add("modal-show");
+  mapPopup.classList.add("modal-show-form");
 });
 
-for (var mapClose of mapCloses) {
-  mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.remove("modal-show");
-  });
-};
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show-form");
+});
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-show")) {
+      if (mapPopup.classList.contains("modal-show-form")) {
         evt.preventDefault();
-        mapPopup.classList.remove("modal-show");
+        mapPopup.classList.remove("modal-show-form");
       }
     }
 });

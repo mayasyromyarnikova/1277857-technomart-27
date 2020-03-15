@@ -5,7 +5,7 @@ var modalClose = modalLogin.querySelector(".modal-close");
 var form = modalLogin.querySelector(".login-form");
 var userName = modalLogin.querySelector("#user-name");
 var userEmail = modalLogin.querySelector("#user-email");
-var textarea = modalLogin.querySelector("#user-mail");
+var mailText = modalLogin.querySelector("#user-mail");
 
 modalOpen.addEventListener("click", function (evt){
   evt.preventDefault();
@@ -28,8 +28,8 @@ window.addEventListener("keydown", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-    if (!userName.value || !userEmail.value || !textarea.value) {
+    if (!userName.value || !userEmail.value || !mailText.value) {
       evt.preventDefault();
       console.log("Нужно ввести логин и пароль");
-    } 
+    }
 });
