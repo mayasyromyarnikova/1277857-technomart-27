@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: black;
@@ -778,7 +778,7 @@ input[type="search"]::placeholder {
 }
 
 .product-item {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
@@ -800,6 +800,7 @@ input[type="search"]::placeholder {
 
 .img-new {
   position: absolute;
+  top: 0;
   right: 0;
   background-image: url("../img/new_flag.png");
   background-repeat: no-repeat;
@@ -861,7 +862,7 @@ input[type="search"]::placeholder {
   padding-right: 42px;
   position: absolute;
   background-color: white;
-  font-family: font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -984,7 +985,7 @@ input[type="search"]::placeholder {
 }
 
 .service p {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   margin: 24px 0 0 0;
 }
@@ -1226,6 +1227,12 @@ input[type="search"]::placeholder {
   flex-shrink: 0;
 }
 
+.footer-up a {
+  color: #f1f5f7;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .footer-down {
   background-color: #293449;
   min-height: 107px;
@@ -1237,8 +1244,13 @@ input[type="search"]::placeholder {
   padding-top: 20px;
 }
 
-.footer-up p,
-.footer-up a {
+.footer-address {
+  flex-shrink: 0;
+}
+
+.footer-address span,
+.footer-address a {
+  display: block;
   color: #f1f5f7;
   font-size: 18px;
   line-height: 24px;
@@ -1357,7 +1369,7 @@ input[type="search"]::placeholder {
 
 .modal-login input,
 .modal-login textarea {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding-left: 16px;
@@ -1377,7 +1389,6 @@ input[type="search"]::placeholder {
 .modal-login textarea {
   width: 100%;
   margin-bottom: 37px;
-  rows: 3;
 }
 
 .modal-login input:hover,
@@ -1526,7 +1537,7 @@ input[type="search"]::placeholder {
 
 .breadcrumbs a {
   color: black;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   padding-right: 40px;
@@ -1575,7 +1586,7 @@ input[type="search"]::placeholder {
 
 .sort h3,
 .filter-head h3 {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   text-transform: uppercase;
@@ -1630,7 +1641,7 @@ input[type="search"]::placeholder {
 }
 
 .sort2-item label {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
@@ -1727,7 +1738,7 @@ input[type="search"]::placeholder {
 }
 
 .filter-button {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 14px;
   text-align: center;
@@ -1735,7 +1746,7 @@ input[type="search"]::placeholder {
   text-transform: uppercase;
   border: none;
   background-color: white;
-  padding: 11px 41px;
+  padding: 11px 39px;
   cursor: pointer;
 }
 
@@ -1755,7 +1766,7 @@ input[type="search"]::placeholder {
 }
 
 .filter-name {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -1830,7 +1841,7 @@ input[type="search"]::placeholder {
 }
 
 .price-controls input {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   text-align: center;
   color: #000000;
@@ -1910,14 +1921,19 @@ input:disabled + label {
   height: 23px;
   background-image: url("../img/icon/icon-checkbox-off.svg");
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.8;
   left: 0;
   top: -2px;
 }
 
 .brands label:hover::before,
 .power label:hover::before {
-  opacity: 0.5;
+  opacity: 1;
+}
+
+input[type="checkbox"]:focus + label::before,
+input[type="radio"]:focus + label::before {
+  outline: #99bbf2 auto 5px;
 }
 
 .power label::before {
@@ -1926,7 +1942,7 @@ input:disabled + label {
   height: 25px;
   background-image: url("../img/icon/icon-radio-off.svg");
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.8;
   left: 0;
   top: -2px;
 }
@@ -1959,7 +1975,6 @@ input[type="radio"]:checked + label::before {
 
 .catalog-item li {
   list-style: none;
-  margin-bottom:
 }
 
 .pagination {
@@ -1978,7 +1993,7 @@ input[type="radio"]:checked + label::before {
 .pagination a {
   padding: 9px 15px;
   border: 1px solid #e5e5e5;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: black;
@@ -2019,7 +2034,7 @@ input[type="radio"]:checked + label::before {
 }
 
 .item-description p {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   padding: 0;
   padding-right: 39px;
