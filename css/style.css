@@ -15,15 +15,12 @@ a {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -32,15 +29,17 @@ input[type="radio"].visually-hidden {
 .button {
   background-color: #ee3643;
   color: white;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   border-radius: 3px;
   height: 38px;
-  padding: 14px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  padding-top: 11px;
 }
 
 .button:hover {
@@ -98,7 +97,7 @@ input[type="radio"].visually-hidden {
 .logo img {
   margin-top: 13px;
   margin-left: 55px;
-  margin-right: 55px;
+  margin-right: 56px;
 }
 
 .logo:hover,
@@ -116,6 +115,7 @@ input[type="radio"].visually-hidden {
   flex-grow: 1;
   position: relative;
   margin: 0;
+  padding: 0;
 }
 
 .input-icon {
@@ -144,6 +144,7 @@ input[type="radio"].visually-hidden {
 .search {
   width: 100%;
   height: 100%;
+  padding: 0;
   padding-left: 49px;
   background-color: #293449;
   border-width: 0;
@@ -233,10 +234,6 @@ input[type="search"]::-webkit-input-placeholder {
   color: white;
 }
 
-input[type="search"]:-ms-input-placeholder {
-  color: white;
-}
-
 input[type="search"]::-ms-input-placeholder {
   color: white;
 }
@@ -247,22 +244,24 @@ input[type="search"]::placeholder {
 
 .inform {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
   padding: 0;
   width: 940px;
-  margin-top: 46px;
-  margin-bottom: 36px;
+  margin-top: 49px;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .description {
+  width: 197px;
   color: #ee3643;
   font-size: 16px;
+  line-height: 23px;
   font-style: italic;
   padding-left: 52px;
+  padding-right: 73px;
   margin: 0;
 }
 
@@ -272,6 +271,7 @@ input[type="search"]::placeholder {
   line-height: 24px;
   text-align: center;
   margin: 0;
+  margin-top: -3px;
   padding: 0;
   position: relative;
 }
@@ -282,10 +282,10 @@ input[type="search"]::placeholder {
   line-height: 21px;
   border: 3px solid white;
   display: block;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 52px;
-  padding-left: 74px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 50px;
+  padding-left: 71px;
   margin: 0;
 }
 
@@ -301,7 +301,7 @@ input[type="search"]::placeholder {
 
 .address span {
   display: block;
-  margin: 5px;
+  margin-top: 4px;
   padding: 0;
 }
 
@@ -314,6 +314,8 @@ input[type="search"]::placeholder {
   align-items: flex-start;
   padding: 0;
   margin: 0;
+  margin-top: -3px;
+  margin-left: auto;
   position: relative;
 }
 
@@ -321,7 +323,7 @@ input[type="search"]::placeholder {
   background-color: white;
   color: #000000;
   margin-left: 10px;
-  padding: 10px 25px;
+  padding: 12px 25px;
   display: block;
 }
 
@@ -334,7 +336,7 @@ input[type="search"]::placeholder {
   height: 17px;
   position: absolute;
   top: 12px;
-  left: 22px;
+  left: 25px;
 }
 
 .login-button:hover + .login path {
@@ -365,6 +367,7 @@ input[type="search"]::placeholder {
   justify-content: space-between;
   align-items: flex-end;
   margin: 0;
+  margin-left: auto;
 }
 
 .user-navigation-authorized {
@@ -382,7 +385,7 @@ input[type="search"]::placeholder {
 .user-pic {
   background-color: white;
   color: #000000;
-  padding: 13px 30px 11px 50px;
+  padding: 10px 29px 11px 48px;
   display: block;
 }
 
@@ -404,17 +407,17 @@ input[type="search"]::placeholder {
   width: 20px;
   height: 18px;
   position: absolute;
-  top: 13px;
-  left: 15px;
+  top: 10px;
+  left: 13px;
   margin: 0;
   padding: 0;
 }
 
-.user-pic:hover + .user path {
+.user-pic:hover > .user path {
   fill: #32425C;
 }
 
-.user-pic:active + .user path {
+.user-pic:active > .user path {
   fill: #c5c5c5;
 }
 
@@ -422,7 +425,7 @@ input[type="search"]::placeholder {
   width: 21px;
   height: 17px;
   position: absolute;
-  top: 14px;
+  top: 11px;
   right: 10px;
   margin: 0;
   padding: 0;
@@ -449,6 +452,7 @@ input[type="search"]::placeholder {
   justify-content: flex-start;
   width: 299px;
   margin: 0;
+  margin-top: 2px;
   padding-left: 17px;
   position: relative;
 }
@@ -458,7 +462,7 @@ input[type="search"]::placeholder {
   text-decoration: underline;
   font-size: 16px;
   color: #32425c;
-  padding: 15px;
+  padding: 17px;
 }
 
 .account a:hover {
@@ -481,7 +485,7 @@ input[type="search"]::placeholder {
   background-color: #32425c;
   position: absolute;
   top: 10px;
-  left: 117px;
+  left: 124px;
 }
 
 .site-navigation a {
@@ -497,7 +501,8 @@ input[type="search"]::placeholder {
   flex-wrap: wrap;
   width: 940px;
   margin: 0 auto 60px auto;
-  padding: 0;
+  padding: 0 22px;
+  box-sizing: border-box;
 }
 
 .site-navigation li {
@@ -528,7 +533,6 @@ input[type="search"]::placeholder {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -537,23 +541,38 @@ input[type="search"]::placeholder {
   list-style: none;
   color: white;
   font-size: 24px;
-  width: 277px;
-  height: 78px;
-  padding-top: 26px;
+  width: 300px;
+  height: 123px;
+  box-sizing: border-box;
+  padding-top: 24px;
   padding-left: 23px;
   padding-bottom: 22px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.promo-item:first-child {
+.promo-item:nth-child(3n) {
+  margin: 0;
+}
+
+.promo-item{
   position: relative;
 }
 
-.promo-item:first-child img {
+.img-new {
   position: absolute;
+  top: -1px;
+  right: -1px;
+  background-image: url("../img/new_flag.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 59px;
+}
+
+.promo-item .img-new {
   top: 0;
   right: 0;
 }
@@ -641,7 +660,7 @@ input[type="search"]::placeholder {
 }
 
 .slider-content .button {
-  margin-top: 120px;
+  margin-top: 122px;
   margin-bottom: 22px;
   left: 26px;
   width: 195px;
@@ -659,13 +678,14 @@ input[type="search"]::placeholder {
 
 .slider p {
   margin: 0;
+  margin-top: 2px;
   padding: 0;
 }
 
 .slider-content {
   width: 620px;
   height: 266px;
-  padding-top: 27px;
+  padding-top: 23px;
   padding-left: 24px;
   display: none;
 }
@@ -682,6 +702,7 @@ input[type="search"]::placeholder {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 6px;
   height: 6px;
   margin-right: 10px;
@@ -727,7 +748,7 @@ input[type="search"]::placeholder {
 
 .back {
   top: 0;
-  left: 0;
+  left: 5px;
   background-image: url("../img/icon/icon-left.svg");
   background-repeat: no-repeat;
   background-position: 100% 114px;
@@ -743,18 +764,21 @@ input[type="search"]::placeholder {
 
 .section-head {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: #f9f5f0;
 }
 
 .section-head h2 {
   font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #32425c;
-  margin-left: 30px;
+  margin-left: 28px;
 }
 
 .section-head .button {
@@ -762,6 +786,8 @@ input[type="search"]::placeholder {
   width: 253px;
   margin-top: 25px;
   margin-bottom: 26px;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 
@@ -774,22 +800,26 @@ input[type="search"]::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 21px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .product-item {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
+  font-weight: bold;
   line-height: 20px;
   text-align: center;
   border: 1px solid #e5e5e5;
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   width: 220px;
   min-height: 318px;
+  padding: 0;
 }
 
 .product-item-image {
@@ -798,23 +828,14 @@ input[type="search"]::placeholder {
   height: 170px;
 }
 
-.img-new {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url("../img/new_flag.png");
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 59px;
-}
-
-.product-item b {
+.product-title {
   display: block;
+  width: 220px;
   margin: 0;
   padding: 9px 30px 0 30px;
 }
 
-.product-item .line-through {
+.line-through {
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
@@ -829,8 +850,7 @@ input[type="search"]::placeholder {
 }
 
 .price {
-  margin: 0;
-  margin-top: auto;
+  margin: auto 36px 20px 43px;
   padding: 0;
 }
 
@@ -846,10 +866,9 @@ input[type="search"]::placeholder {
   height: 38px;
   margin: 0;
   margin-top: 10px;
-  margin-bottom: 21px;
   display: block;
   padding: 0;
-  padding-top: 8px;
+  padding-top: 9px;
   box-sizing: border-box;
 }
 
@@ -860,11 +879,15 @@ input[type="search"]::placeholder {
   padding-top: 44px;
   padding-left: 42px;
   padding-right: 42px;
+  margin: 0;
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: white;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   display: none;
 }
@@ -941,8 +964,39 @@ input[type="search"]::placeholder {
   height: 145px;
   margin-bottom: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
+}
+
+.bosch {
+  margin: 53px auto 55px auto;
+}
+
+.makita {
+  margin: 50px auto 55px auto;
+}
+
+.dewalt {
+  margin: 48px auto 53px auto;
+}
+
+.interskol {
+  margin: 21px 11px 36px 9px;
+}
+
+.hitachi {
+  margin: 58px 23px 56px 28px;
+}
+
+.lg {
+  margin: 35px 51px 37px 48px;
+}
+
+.aeg {
+  margin: 23px 34px 26px 35px;
+}
+
+.metabo {
+  margin: 34px 6px 42px 10px;
 }
 
 .brands-item:hover {
@@ -963,38 +1017,43 @@ input[type="search"]::placeholder {
   position: relative;
 }
 
-.about-company h2,
-.contacts h2,
 .service h2  {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: black;
   text-transform: uppercase;
 }
 
 .service h2 {
-  margin: 68px 0 0 0;
+  margin: 65px 0 0 0;
 }
 
 .service-item h3 {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
-  margin: 0;
+  margin: -2px 0 0 0;
 }
 
 .service p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  margin: 24px 0 0 0;
+  line-height: 24px;
+  margin: 26px 0 0 0;
+}
+
+.service-list p {
+  margin-top: 25px;
 }
 
 .service-row {
   display: flex;
   align-items: flex-start;
   padding: 0;
-  margin: 74px 0 99px 0;
+  margin: 70px 0 99px 0;
 }
 
 .service-option {
@@ -1026,11 +1085,11 @@ input[type="search"]::placeholder {
     0px 1px 0 0 #405069 inset;
   border-width: 0;
   width: 240px;
-  height: 61px;
+  height: 62px;
   text-align: left;
   margin: 0;
-  padding-top: 15px;
-  padding-left: 23px;
+  padding-top: 14px;
+  padding-left: 22px;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -1080,7 +1139,7 @@ input[type="search"]::placeholder {
   position: absolute;
   background-image: url("../img/delivery.png");
   left: 151px;
-  top: 21px;
+  top: 25px;
 }
 
 .service-guarantee::after {
@@ -1105,11 +1164,10 @@ input[type="search"]::placeholder {
 
 .company {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  height: 536px;
-  padding-top: 52px;
+  padding-top: 78px;
+  padding-bottom: 55px;
 }
 
 .about-company {
@@ -1119,22 +1177,49 @@ input[type="search"]::placeholder {
   align-items: flex-start;
 }
 
-.delivery-company {
-  margin: 0;
-  margin-bottom: 37px;
+.about-company h2,
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
   padding: 0;
+  margin: 0;
 }
 
-.about-company li {
+.about-company p,
+.contacts p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.delivery-company {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  padding-top: 3px;
+}
+
+.delivery-company li {
   list-style: none;
   font-size: 18px;
   line-height: 24px;
-  margin: 12px 0;
+  margin: 16px 0 0 36px;
+  position: relative;
 }
 
-.about-company span {
-  font-weight: bold;
-  color: #ee3643;
+.delivery-company span::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  left: -36px;
+  top: 10px;
 }
 
 .about-company a {
@@ -1149,10 +1234,11 @@ input[type="search"]::placeholder {
 }
 
 .contacts p {
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 }
+
 .contacts a {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .main-footer {
@@ -1165,14 +1251,13 @@ input[type="search"]::placeholder {
 
 .container-row {
   display: flex;
-  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
   padding: 0;
 }
 
 .footer-up .container-row {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .footer-logo {
@@ -1181,15 +1266,14 @@ input[type="search"]::placeholder {
 }
 
 .footer-logo {
-  display: flex;
   min-height: 63px;
   padding: 0;
 }
 
 .footer-logo img {
   margin-top: 20px;
-  margin-left: 55px;
-  margin-right: 55px;
+  margin-left: 42px;
+  margin-right: 42px;
 }
 
 .company-navigation {
@@ -1225,6 +1309,7 @@ input[type="search"]::placeholder {
 
 .footer-up p {
   flex-shrink: 0;
+  margin-left: 2px;
 }
 
 .footer-up a {
@@ -1258,7 +1343,7 @@ input[type="search"]::placeholder {
 
 .company-navigation a:active,
 .catalog-navigation a:active {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .main-footer li {
@@ -1281,6 +1366,8 @@ input[type="search"]::placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: auto;
+  padding: 0;
 }
 
 .social-icon {
@@ -1318,6 +1405,7 @@ input[type="search"]::placeholder {
 .development {
   display: flex;
   flex-shrink: 0;
+  margin-left: 60px;
 }
 
 .development p {
@@ -1329,7 +1417,7 @@ input[type="search"]::placeholder {
 }
 
 .development:last-child {
-  padding-right: 15px;
+  padding-right: 13px;
 }
 
 .development a {
@@ -1344,6 +1432,10 @@ input[type="search"]::placeholder {
 .modal {
   position: fixed;
   background-color: white;
+  box-sizing: border-box;
+  width: 620px;
+  top: 120px;
+  left: 50%;
   margin: 0;
   display: none;
   z-index: 9;
@@ -1473,11 +1565,23 @@ input[type="search"]::placeholder {
 .modal-map {
   width: 940px;
   height: 446px;
-  position: relative;
   left: 50%;
   margin-left: -470px;
   box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.5);
-  z-index: 8;
+  box-sizing: border-box;
+  z-index: 9;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .modal-close {
@@ -1489,6 +1593,7 @@ input[type="search"]::placeholder {
   position: absolute;
   right: 6px;
   top: 9px;
+  z-index: 9;
 }
 
 .modal-close::after {
@@ -1499,6 +1604,26 @@ input[type="search"]::placeholder {
   background-image: url("../img/icon/icon-close.svg");
   top: 0;
   left: 0;
+}
+
+@keyframes appearence {
+  0% {
+    transform: translatey(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-show-form {
+  display: block;
+  animation-name: appearence;
+  animation-duration: 0.6s;
+  animation-fill-mode: backwards;
 }
 
 .breadcrumbs {
@@ -1549,9 +1674,10 @@ input[type="search"]::placeholder {
   height: 32px;
   background-image: url("../img/icon/icon-home.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
   padding: 0;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 18px;
+  margin-right: 22px;
 }
 
 .catalog-container {
@@ -1576,12 +1702,12 @@ input[type="search"]::placeholder {
   background-color: #f7f3ec;
   padding: 0;
   margin: 0;
+  margin-bottom: 11px;
 }
 
-.filter-head,
 .filter-sort,
 .product-item {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .sort h3,
@@ -1600,8 +1726,9 @@ input[type="search"]::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: flex-start;
   width: 700px;
-  height: 38px;
+  min-height: 38px;
   background-color: #f7f3ec;
 }
 
@@ -1609,13 +1736,19 @@ input[type="search"]::placeholder {
   margin: 0;
   padding: 0;
   height: 38px;
+  flex-shrink: 0;
 }
 
 .sort2,
 .sort4 {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+
+.sort2 {
+  justify-content: flex-end;
 }
 
 .filter-sort form {
@@ -1624,7 +1757,7 @@ input[type="search"]::placeholder {
 
 .sort4 {
   margin-right: 7px;
-  margin-left: 36px;
+  margin-left: 40px;
   position: relative;
 }
 
@@ -1636,8 +1769,12 @@ input[type="search"]::placeholder {
   display: flex;
 }
 
-.sort2 li {
-  margin-left: 68px;
+.sort2 li:not(:first-child) {
+  margin-left: 72px;
+}
+
+.sort2-item {
+  flex-shrink: 0;
 }
 
 .sort2-item label {
@@ -1646,22 +1783,45 @@ input[type="search"]::placeholder {
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-color: #ee3643;
-  text-decoration-style: dotted;
+  position: relative;
   cursor: pointer;
 }
 
-.sort2-item label:hover {
-  color: #000000;
-  text-decoration-style: solid;
+.sort2-item label::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dotted #ee3643;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+.sort2-item label:hover::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #ee3643;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+.sort2-item input:focus + label,
+.sort4 input:focus ~ svg {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 #filter-price:checked ~ label[for="filter-price"],
 #filter-type:checked ~ label[for="filter-type"],
 #filter-functional:checked ~ label[for="filter-functional"] {
   color: #ee3643;
-  text-decoration: none;
+}
+
+#filter-price:checked ~ label::after,
+#filter-type:checked ~ label::after,
+#filter-functional:checked ~ label::after {
+  display: none;
 }
 
 .sort4 label {
@@ -1670,18 +1830,19 @@ input[type="search"]::placeholder {
   margin: 0;
   padding: 0;
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
 }
 
 .ascending-icon,
 .descending-icon {
   position: absolute;
-  top: 10px;
+  top: 11px;
   cursor: pointer;
 }
 
 .ascending-icon {
-  right: 40px;
+  right: 42px;
 }
 
 .descending-icon {
@@ -1696,20 +1857,11 @@ input[type="search"]::placeholder {
   fill: #000000;
 }
 
-#filter-ascending:checked ~ .ascending-icon path {
-  fill: #ee3643;
-}
-
+.ascending-icon:active path,
+.descending-icon:active polyline,
+#filter-ascending:checked ~ .ascending-icon path,
 #filter-descending:checked ~ .descending-icon polyline {
   fill: #ee3643;
-}
-
-.sort2 button,
-.sort4 button {
-  background-color: #f7f3ec;
-  border: 0;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog {
@@ -1727,12 +1879,14 @@ input[type="search"]::placeholder {
   height: 89px;
   background-color: #f2f6f8;
   order: 2;
-  padding-left: 30px;
+  padding-left: 28px;
   margin-bottom: 20px;
 }
 
 .catalog-header h1 {
   font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #32425c;
 }
@@ -1748,13 +1902,8 @@ input[type="search"]::placeholder {
   background-color: white;
   padding: 11px 39px;
   cursor: pointer;
-}
-
-.button-border {
   border: 1px solid #e5e5e5;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 57px;
+  margin-top: 54px;
   width: 140px;
   display: block;
 }
@@ -1773,13 +1922,14 @@ input[type="search"]::placeholder {
   text-transform: uppercase;
   color: black;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding: 0;
 }
 
 .range-filter {
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
 
 .range-controls,
@@ -1833,10 +1983,12 @@ input[type="search"]::placeholder {
 
 .price-controls {
   font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .price-controls label {
-  display: inline-block;
   border-radius: 5px;
 }
 
@@ -1846,7 +1998,6 @@ input[type="search"]::placeholder {
   text-align: center;
   color: #000000;
   background-color: #f7f3ec;
-
   border: 0;
   width: 75px;
   padding-top: 9px;
@@ -1865,8 +2016,6 @@ input[type="search"]::placeholder {
   width: 10px;
   height: 1px;
   background-color: #444444;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .max-price {
@@ -1877,14 +2026,14 @@ input[type="search"]::placeholder {
   width: 220px;
   height: 1px;
   background-color: #e5e5e5;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .brands,
 .power {
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .brands li,
@@ -1896,23 +2045,21 @@ input[type="search"]::placeholder {
   position: relative;
 }
 
-.brands li {
-  margin-bottom: 16px;
-}
-
+.brands li,
 .power li {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .brands label,
 .power label {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 input:disabled + label {
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .brands label::before {
@@ -1923,17 +2070,12 @@ input:disabled + label {
   position: absolute;
   opacity: 0.8;
   left: 0;
-  top: -2px;
+  top: 0;
 }
 
 .brands label:hover::before,
 .power label:hover::before {
   opacity: 1;
-}
-
-input[type="checkbox"]:focus + label::before,
-input[type="radio"]:focus + label::before {
-  outline: #99bbf2 auto 5px;
 }
 
 .power label::before {
@@ -1961,6 +2103,11 @@ input[type="radio"]:checked + label::before {
   background-image: url("../img/icon/icon-radio-on.svg");
 }
 
+input[type="checkbox"]:focus + label::before,
+input[type="radio"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
 .catalog h2 {
   order: 2;
 }
@@ -1979,7 +2126,7 @@ input[type="radio"]:checked + label::before {
 
 .pagination {
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
   padding: 0;
   display: flex;
 }
@@ -1991,11 +2138,12 @@ input[type="radio"]:checked + label::before {
 }
 
 .pagination a {
-  padding: 9px 15px;
+  padding: 10px 15px;
   border: 1px solid #e5e5e5;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
   color: black;
 }
 
@@ -2027,6 +2175,7 @@ input[type="radio"]:checked + label::before {
 .item-description h2 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -2040,8 +2189,3 @@ input[type="radio"]:checked + label::before {
   padding-right: 39px;
   margin: 0;
 }
-
-/* шрифты
-font-family: 'Cuprum', sans-serif;
-font-family: 'PT Sans', sans-serif;
-*/
