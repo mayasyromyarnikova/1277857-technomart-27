@@ -16,6 +16,7 @@ modalOpen.addEventListener("click", function (evt){
 modalClose.addEventListener("click", function (evt){
   evt.preventDefault();
   modalLogin.classList.remove("modal-show-form");
+  modalLogin.classList.remove("modal-error");
 })
 
 window.addEventListener("keydown", function (evt) {
@@ -23,6 +24,7 @@ window.addEventListener("keydown", function (evt) {
       if (modalLogin.classList.contains("modal-show-form")) {
         evt.preventDefault();
         modalLogin.classList.remove("modal-show-form");
+        modalLogin.classList.remove("modal-error");
       }
     }
 });
@@ -30,6 +32,8 @@ window.addEventListener("keydown", function (evt) {
 form.addEventListener("submit", function (evt) {
     if (!userName.value || !userEmail.value || !mailText.value) {
       evt.preventDefault();
-      console.log("Нужно ввести логин и пароль");
+      modalLogin.classList.remove("modal-error");
+      modalLogin.offsetWidth = modalLogin.offsetWidth;
+      modalLogin.classList.add("modal-error");
     }
 });
